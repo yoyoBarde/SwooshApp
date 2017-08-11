@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="julius.barde.com.swooshapp.MainActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/welcome_screen_bg"
+        android:scaleType="centerCrop"
+        />
+
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/swoosh_logo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/logo_img"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_img"
+        android:layout_marginTop="40dp"
+        android:text="@string/Go"
+        android:textSize="60sp"
+        android:textAlignment="center"
+        android:textColor="@color/whitef"
+        android:textStyle="bold"
+        android:id="@+id/go_tv"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/go_tv"
+        android:text="@string/go1"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        android:textColor="@color/whitef"
+        android:id="@+id/go1_tv"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/go1_tv"
+        android:text="@string/go2"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/whitef"
+        android:layout_margin="20dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:text="Get Started"
+        android:textSize="20sp"
+        android:background="@drawable/colorbutton"
+        android:textColor="@drawable/button_text_color"
+        android:id="@+id/buttonStart"
+        android:onClick="getStarted"
+
+        />
+
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="julius.barde.com.swooshapp.MainActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/beginner_baller_bg"
+        android:scaleType="centerCrop"
+        />
+
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/swoosh_logo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/logo_img"
+        />
+
+    <TextView
+
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_img"
+        android:text="I am a"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/whitef"
+        android:id="@+id/text1"
+        />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_below="@+id/text1"
+    android:layout_marginTop="40dp"
+    android:layout_marginLeft="20dp"
+    >
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Beginner"
+        android:textSize="20sp"
+        android:background="@drawable/colorbutton"
+        android:textColor="@drawable/button_text_color"
+        android:id="@+id/beginner_btn"
+        android:textAllCaps="false"
+        android:onClick="beginner"
+        android:layout_marginRight="30dp"
+
+
+
+        />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+
+        android:text="Baller"
+        android:textSize="20sp"
+        android:background="@drawable/colorbutton"
+        android:textColor="@drawable/button_text_color"
+        android:id="@+id/mens_btn"
+        android:textAllCaps="false"
+        android:onClick="baller"
+
+
+        />
+</LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:text="Next"
+        android:textSize="20sp"
+        android:background="@drawable/colorbutton"
+        android:textColor="@drawable/button_text_color"
+        android:id="@+id/next_btn"
+        android:onClick="next"
+        android:alpha=".50"
+        android:enabled="false"
+
+        />
+
+</RelativeLayout>
